@@ -162,10 +162,10 @@ Partial Class Form2
         Me.cbCameras.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbCameras.Font = New System.Drawing.Font("Courier New", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbCameras.FormattingEnabled = True
-        Me.cbCameras.ItemHeight = 17
+        Me.cbCameras.ItemHeight = 20
         Me.cbCameras.Location = New System.Drawing.Point(128, 77)
         Me.cbCameras.Name = "cbCameras"
-        Me.cbCameras.Size = New System.Drawing.Size(180, 25)
+        Me.cbCameras.Size = New System.Drawing.Size(180, 28)
         Me.cbCameras.TabIndex = 9
         Me.cbCameras.TabStop = False
         '
@@ -260,9 +260,9 @@ Partial Class Form2
         'Button13
         '
         Me.Button13.Font = New System.Drawing.Font("Tahoma", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button13.Location = New System.Drawing.Point(584, 304)
+        Me.Button13.Location = New System.Drawing.Point(584, 309)
         Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(95, 65)
+        Me.Button13.Size = New System.Drawing.Size(95, 60)
         Me.Button13.TabIndex = 20
         Me.Button13.TabStop = False
         Me.Button13.Text = "CHỌN LẠI"

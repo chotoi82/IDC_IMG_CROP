@@ -399,7 +399,7 @@ Public Class Form2
         ' Tính Zoom vừa khung hình
         zoomW = ImageBox2.ClientSize.Width / bmp2.Width
         zoomH = ImageBox2.ClientSize.Height / bmp2.Height
-        fitZoom2 = CInt(Math.Floor(Math.Min(zoomW, zoomH) * 100))
+        fitZoom2 = CInt(Math.Floor(Math.Min(zoomW, zoomH) * 99))
         ImageBox2.Zoom = 0
         ImageBox2.Image = bmp2
         ImageBox2.Zoom = fitZoom2
