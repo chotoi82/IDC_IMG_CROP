@@ -49,15 +49,19 @@
   <ItemGroup>
     <Reference Include="AForge">
       <HintPath>.\AForge.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="AForge.Video">
       <HintPath>.\AForge.Video.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="AForge.Video.DirectShow">
       <HintPath>.\AForge.Video.DirectShow.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Cyotek.Windows.Forms.ImageBox">
       <HintPath>.\Cyotek.Windows.Forms.ImageBox.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -106,6 +110,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="SubMainModule.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form2.resx">
@@ -129,6 +134,18 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AForge.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AForge.Video.DirectShow.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AForge.Video.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Cyotek.Windows.Forms.ImageBox.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

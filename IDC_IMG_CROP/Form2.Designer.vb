@@ -50,6 +50,7 @@ Partial Class Form2
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Button14 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -324,6 +325,7 @@ Partial Class Form2
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Button14)
         Me.GroupBox1.Controls.Add(Me.Button6)
         Me.GroupBox1.Controls.Add(Me.Button7)
         Me.GroupBox1.Controls.Add(Me.Button5)
@@ -335,7 +337,7 @@ Partial Class Form2
         Me.GroupBox1.Font = New System.Drawing.Font("Tahoma", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(332, 375)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(241, 123)
+        Me.GroupBox1.Size = New System.Drawing.Size(347, 123)
         Me.GroupBox1.TabIndex = 27
         Me.GroupBox1.TabStop = False
         '
@@ -363,6 +365,19 @@ Partial Class Form2
         Me.GroupBox3.Size = New System.Drawing.Size(457, 194)
         Me.GroupBox3.TabIndex = 29
         Me.GroupBox3.TabStop = False
+        '
+        'Button14
+        '
+        Me.Button14.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button14.Image = CType(resources.GetObject("Button14.Image"), System.Drawing.Image)
+        Me.Button14.Location = New System.Drawing.Point(252, 14)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(89, 99)
+        Me.Button14.TabIndex = 20
+        Me.Button14.TabStop = False
+        Me.Button14.Text = "Lật Hình"
+        Me.Button14.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button14.UseVisualStyleBackColor = True
         '
         'Form2
         '
@@ -421,4 +436,5 @@ Partial Class Form2
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents Button14 As Button
 End Class

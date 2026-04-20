@@ -10,6 +10,13 @@ Imports System.ComponentModel
 Imports System.Drawing.Imaging
 
 Public Class Form2
+    Public Sub New()
+        ' 1. Đăng ký nạp DLL trước
+        SubMainModule.InitApp()
+        ' 2. Sau đó mới khởi tạo Form
+        InitializeComponent()
+    End Sub
+    Private _isMirror As Boolean = False ' Mặc định không lật
     Private _originalImage As Image ' Hình chưa xoay
     Private _currentAngle As Single = 0 ' Góc xoay hiện tại
     Dim cameras As FilterInfoCollection ' Danh sách camera
@@ -119,7 +126,10 @@ Public Class Form2
 
             ' Clone hình
             Dim bmp As Bitmap = DirectCast(eventArgs.Frame.Clone(), Bitmap)
-
+            ' --- LỆNH LẬT GƯƠNG (MIRROR) NẰM Ở ĐÂY ---
+            If _isMirror Then
+                bmp.RotateFlip(RotateFlipType.RotateNoneFlipX)
+            End If
             ' 2. Sử dụng BeginInvoke để an toàn hơn khi đóng App
             If ImageBox1.InvokeRequired Then
                 ImageBox1.BeginInvoke(Sub()
@@ -287,6 +297,7 @@ Public Class Form2
                 AddHandler _videoSource.NewFrame, AddressOf VideoSource_NewFrame
                 ImageBox1.Zoom = 0
                 _videoSource.Start()
+
                 ImageBox1.Zoom += 35
             Catch ex As Exception
                 btnStart.Text = "Lấy từ Camera | OFF"
@@ -609,6 +620,11 @@ Public Class Form2
         ImageBox1.SelectionRegion = Rectangle.Empty
         ' Cập nhật lại hiển thị để mất khung màu đỏ ngay lập tức
         ImageBox1.Invalidate()
+
+    End Sub
+
+    Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
+        _isMirror = Not _isMirror
 
     End Sub
 
