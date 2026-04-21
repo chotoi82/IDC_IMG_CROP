@@ -48,9 +48,9 @@ Partial Class Form2
         Me.Button_Save = New System.Windows.Forms.Button()
         Me.Button15 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button14 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Button14 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -341,6 +341,19 @@ Partial Class Form2
         Me.GroupBox1.TabIndex = 27
         Me.GroupBox1.TabStop = False
         '
+        'Button14
+        '
+        Me.Button14.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button14.Image = CType(resources.GetObject("Button14.Image"), System.Drawing.Image)
+        Me.Button14.Location = New System.Drawing.Point(252, 14)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(89, 99)
+        Me.Button14.TabIndex = 20
+        Me.Button14.TabStop = False
+        Me.Button14.Text = "Lật Hình"
+        Me.Button14.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button14.UseVisualStyleBackColor = True
+        '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.btnLoad)
@@ -366,19 +379,6 @@ Partial Class Form2
         Me.GroupBox3.TabIndex = 29
         Me.GroupBox3.TabStop = False
         '
-        'Button14
-        '
-        Me.Button14.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button14.Image = CType(resources.GetObject("Button14.Image"), System.Drawing.Image)
-        Me.Button14.Location = New System.Drawing.Point(252, 14)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(89, 99)
-        Me.Button14.TabIndex = 20
-        Me.Button14.TabStop = False
-        Me.Button14.Text = "Lật Hình"
-        Me.Button14.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button14.UseVisualStyleBackColor = True
-        '
         'Form2
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -396,6 +396,7 @@ Partial Class Form2
         Me.Controls.Add(Me.ImageBox2)
         Me.Controls.Add(Me.ImageBox3)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form2"
